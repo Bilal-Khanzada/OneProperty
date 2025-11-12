@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6a1b9a;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1920x500') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+/* Property Details */
+.property-details {
+    padding: 4rem 0;
+}
+
+.details-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6a1b9a;
+}
+
+.main-details .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    padding: 0.5rem 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 2rem;
+}
+
+.description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #6a1b9a;
+}
+
+.description p {
+    margin-bottom: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.location h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #6a1b9a;
+}
+
+.map {
+    height: 300px;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+/* More Properties */
+.more-properties {
+    padding: 4rem 0;
+    background: #f5f5f5;
+}
+
+.more-properties h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.property-image {
+    height: 200px;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+/* Get in Touch */
+.get-in-touch {
+    padding: 4rem 0;
+    background: #6a1b9a;
+    color: white;
+}
+
+.get-in-touch h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    background: white;
+    color: #6a1b9a;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #f0f0f0;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
