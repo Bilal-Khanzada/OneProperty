@@ -3,146 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FILTER - ONE Property Group</title>
+    <title>All Filters - ONE Property Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">ONE Property Group</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Modal Overlay -->
+    <div class="filter-modal-overlay">
+        <div class="filter-modal">
+            <!-- Modal Header -->
+            <div class="filter-modal-header">
+                <h2 class="filter-modal-title">All filters</h2>
+                <button class="filter-modal-close" onclick="window.close()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find Your Perfect Property</h1>
-        </div>
-    </section>
+        <!-- Modal Content -->
+        <div class="filter-modal-content">
+            <!-- Column 1: Type and Operations + Location -->
+            <div class="filter-section">
+                <h3 class="filter-section-title">Type and Operations</h3>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Type</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button">Apartment</button>
+                        <button class="filter-button">Duplex</button>
+                        <button class="filter-button">Villa</button>
+                        <button class="filter-button">Mansion</button>
+                        <button class="filter-button">Townhouse</button>
+                        <button class="filter-button">Penthouse</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Operation</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button filter-button-active">All</button>
+                        <button class="filter-button">Buy</button>
+                        <button class="filter-button">Rent</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Location</h4>
+                    <select class="filter-select">
+                        <option>All</option>
+                        <option>Benalmadena</option>
+                        <option>Estepona</option>
+                        <option>Fuengirola</option>
+                        <option>Malaga</option>
+                        <option>Marbella</option>
+                        <option>Mijas</option>
+                        <option>Sotogrande</option>
+                    </select>
+                </div>
+            </div>
 
-    <!-- Filter Form -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-box">
-                <h2>Search Properties</h2>
-                <form class="filter-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Location</label>
-                            <select>
-                                <option>Select Location</option>
-                                <option>Benalmadena</option>
-                                <option>Marbella</option>
-                                <option>Estepona</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Property Type</label>
-                            <select>
-                                <option>Select Type</option>
-                                <option>Villa</option>
-                                <option>Apartment</option>
-                                <option>Penthouse</option>
-                            </select>
-                        </div>
+            <div class="filter-section-divider"></div>
+
+            <!-- Column 2: Price and Size + Additional Details -->
+            <div class="filter-section">
+                <h3 class="filter-section-title">Price and size</h3>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Price</h4>
+                    <div class="filter-range">
+                        <input type="text" class="range-input" placeholder="319.000" />
+                        <span class="range-text">USD</span>
+                        <span class="range-separator">-</span>
+                        <input type="text" class="range-input" placeholder="490.000.000" />
+                        <span class="range-text">USD</span>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Bedrooms</label>
-                            <select>
-                                <option>Any</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4+</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Bathrooms</label>
-                            <select>
-                                <option>Any</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4+</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Area</h4>
+                    <div class="filter-range">
+                        <input type="text" class="range-input" placeholder="279" />
+                        <span class="range-text">m2</span>
+                        <span class="range-separator">-</span>
+                        <input type="text" class="range-input" placeholder="42.000" />
+                        <span class="range-text">m2</span>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Price Range</label>
-                            <div class="price-range">
-                                <input type="number" placeholder="Min">
-                                <span>-</span>
-                                <input type="number" placeholder="Max">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Size (m²)</label>
-                            <input type="number" placeholder="Min size">
-                        </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Additional details</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button">New Build</button>
+                        <button class="filter-button">Private Pool</button>
+                        <button class="filter-button">Garage</button>
+                        <button class="filter-button">Sea Views</button>
+                        <button class="filter-button">Golf Views</button>
+                        <button class="filter-button">Beachfront</button>
+                        <button class="filter-button">Private Garden</button>
+                        <button class="filter-button">Panoramic View</button>
                     </div>
-                    <button type="submit" class="btn-primary">Search Properties</button>
-                </form>
+                </div>
+            </div>
+
+            <div class="filter-section-divider"></div>
+
+            <!-- Column 3: General -->
+            <div class="filter-section">
+                <h3 class="filter-section-title">General</h3>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Condition</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button">Used</button>
+                        <button class="filter-button">New</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Bedrooms</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button">Studio</button>
+                        <button class="filter-button">1</button>
+                        <button class="filter-button">2</button>
+                        <button class="filter-button">3</button>
+                        <button class="filter-button">4+</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Bathrooms</h4>
+                    <div class="filter-buttons">
+                        <button class="filter-button filter-button-active">All</button>
+                        <button class="filter-button">1</button>
+                        <button class="filter-button">2</button>
+                        <button class="filter-button">3</button>
+                        <button class="filter-button">4+</button>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons in Third Column -->
+                <div class="filter-group" style="margin-top: 40px;">
+                    <div class="filter-action-buttons">
+                        <button class="filter-clear-button">CLEAR FILTERS</button>
+                        <button class="filter-apply-button">200 PROPERTIES</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Matching Offers -->
-    <section class="matching-offers">
-        <div class="container">
-            <h2>Matching Offers</h2>
-            <div class="properties-grid">
-                <div class="property-card"></div>
-                <div class="property-card"></div>
-                <div class="property-card"></div>
-                <div class="property-card"></div>
-            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <div class="container">
-            <h2>The benefits of living in [location]</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-            </div>
-        </div>
-    </section>
+    <script>
+        // Close modal on overlay click
+        document.querySelector('.filter-modal-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                window.close();
+            }
+        });
 
-    <!-- Get in Touch -->
-    <section class="get-in-touch">
-        <div class="container">
-            <h2>Get in touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit" class="btn-primary">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 ONE Property Group. All rights reserved.</p>
-        </div>
-    </footer>
+        // Toggle filter buttons
+        document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // If it's in a group, only one can be active at a time
+                const group = this.closest('.filter-group');
+                if (group) {
+                    const buttons = group.querySelectorAll('.filter-button');
+                    buttons.forEach(btn => {
+                        if (btn !== this) {
+                            btn.classList.remove('filter-button-active');
+                        }
+                    });
+                }
+                this.classList.toggle('filter-button-active');
+            });
+        });
+    </script>
 </body>
 </html>
-
-
