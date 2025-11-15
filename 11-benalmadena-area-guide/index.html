@@ -4,42 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benalmadena Area Guide - ONE Property Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- ========== HEADER/NAVIGATION SECTION ========== -->
+    <header class="header">
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">ONE Property Group</div>
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <div class="logo">
+                    <span class="logo-one">ONE</span>
+                    <span class="logo-separator">|</span>
+                    <div class="logo-group">
+                        <span class="logo-property">PROPERTY</span>
+                        <span class="logo-group-text">GROUP</span>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                    <li><a href="#">BUY</a></li>
+                    <li><a href="#">SELL</a></li>
+                    <li><a href="#">PROPERTY COLLECTIONS</a></li>
+                    <li><a href="#">GUIDES & BLOG</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">GET IN TOUCH</a></li>
             </ul>
+                
+                <!-- User Icon -->
+                <div class="user-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                        <path d="M12 14C7.58172 14 4 16.2386 4 19V22H20V19C20 16.2386 16.4183 14 12 14Z" fill="white"/>
+                    </svg>
+                </div>
         </div>
     </nav>
+    </header>
 
-    <!-- Hero Section -->
+    <!-- ========== HERO SECTION ========== -->
     <section class="hero">
+        <!-- Background Image -->
+        <div class="hero-background">
+            <img src="assets/building.png" alt="Benalmadena" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Hero Content Overlay -->
         <div class="hero-content">
-            <h1>Benalmadena</h1>
+            <div class="hero-text">
+                <h1 class="hero-title">Benalmadena</h1>
+            </div>
+            
+            <!-- Separator Line -->
+            <div class="hero-separator"></div>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">30 PROPERTIES FOUND</p>
         </div>
     </section>
 
-    <!-- Area Information -->
-    <section class="area-info">
-        <div class="container">
-            <div class="info-section">
-                <h2>Why choose to Benalmadena?</h2>
-                <p>Benalmadena is a beautiful coastal town on the Costa del Sol, offering the perfect blend of traditional Spanish charm and modern amenities. With stunning beaches, excellent restaurants, vibrant nightlife, and world-class marinas, it's an ideal location for both living and investing.</p>
-                <div class="info-image"></div>
-            </div>
-            <div class="info-section">
-                <h2>What to do in Benalmadena</h2>
-                <p>From relaxing on pristine beaches to exploring the historic old town, Benalmadena offers endless activities. Visit the Tivoli World theme park, enjoy water sports, play golf at championship courses, or simply soak up the Mediterranean lifestyle at one of the many beachfront cafes.</p>
-                <div class="info-image"></div>
+    <!-- About Benalmadena Section -->
+    <section class="about-benalmadena">
+        <div class="about-benalmadena-container">
+            <div class="about-benalmadena-content">
+                <div class="about-benalmadena-text">
+                    <h2 class="about-benalmadena-title">
+                        <span class="about-benalmadena-title-light">About</span>
+                        <span class="about-benalmadena-title-bold">Benalmadena</span>
+                    </h2>
+                    <div class="about-benalmadena-divider"></div>
+                    <p class="about-benalmadena-description">
+                        Benalmádena, located on the beautiful Costa del Sol, is a sought-after destination for those looking for an idyllic place to live. Its perfect climate, relaxed vibes, vibrant social life, and proximity to Malaga make it an ideal choice. Benalmádena offers something for everyone, from golden sandy beaches to green spaces and sports facilities.
+                    </p>
+                </div>
+                <div class="about-benalmadena-image">
+                    <img src="assets/ship.png" alt="Benalmadena Marina" class="about-image">
+                </div>
             </div>
         </div>
     </section>
@@ -110,6 +154,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

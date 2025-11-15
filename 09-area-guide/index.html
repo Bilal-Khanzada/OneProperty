@@ -4,80 +4,368 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area Guide - ONE Property Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- ========== HEADER/NAVIGATION SECTION ========== -->
+    <header class="header">
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">ONE Property Group</div>
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <div class="logo">
+                    <span class="logo-one">ONE</span>
+                    <span class="logo-separator">|</span>
+                    <div class="logo-group">
+                        <span class="logo-property">PROPERTY</span>
+                        <span class="logo-group-text">GROUP</span>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                    <li><a href="#">BUY</a></li>
+                    <li><a href="#">SELL</a></li>
+                    <li><a href="#">PROPERTY COLLECTIONS</a></li>
+                    <li><a href="#">GUIDES & BLOG</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">GET IN TOUCH</a></li>
             </ul>
+                
+                <!-- User Icon -->
+                <div class="user-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                        <path d="M12 14C7.58172 14 4 16.2386 4 19V22H20V19C20 16.2386 16.4183 14 12 14Z" fill="white"/>
+                    </svg>
+                </div>
         </div>
     </nav>
+    </header>
 
-    <!-- Hero Section -->
+    <!-- ========== HERO SECTION ========== -->
     <section class="hero">
+        <!-- Background Image -->
+        <div class="hero-background">
+            <img src="assets/seahome.jpg" alt="Area Guides" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Hero Content Overlay -->
         <div class="hero-content">
-            <h1>ONE Property Group</h1>
+            <div class="hero-text">
+                <h1 class="hero-title">ONE Property</h1>
+                <h2 class="hero-subtitle">Group Guides</h2>
+            </div>
+            
+            <!-- Separator Line -->
+            <div class="hero-separator"></div>
         </div>
     </section>
 
-    <!-- Information Sections -->
-    <section class="info-sections">
-        <div class="container">
-            <div class="info-section">
-                <h2>Everything you need to know</h2>
-                <p>Discover the best areas to live, work, and invest in the Costa del Sol. Our comprehensive area guides provide detailed information about local amenities, transportation, schools, healthcare facilities, and lifestyle options.</p>
-                <div class="info-image"></div>
+    <!-- ========== AREAS GUIDES SECTION ========== -->
+    <section class="areas-guides-section">
+        <div class="areas-guides-container">
+            <div class="areas-guides-header">
+                <div class="areas-guides-title-section">
+                    <h2 class="areas-guides-title">
+                        <span class="areas-guides-title-bold">Areas</span>
+                        <span class="areas-guides-title-light">guides</span>
+                    </h2>
+                    <div class="areas-guides-divider"></div>
+                </div>
+                <div class="areas-guides-description">
+                    <p>Experience a stay like no other as you immerse yourself in our featured rooms, carefully crafted to provide the perfect blend of comfort and luxury.</p>
+                </div>
             </div>
-            <div class="info-section">
-                <h2>News & Real Estate Blog</h2>
-                <p>Stay updated with the latest news, market trends, and insights from the real estate industry. Our blog covers everything from property investment tips to local area highlights and lifestyle articles.</p>
-                <div class="info-image"></div>
+            <div class="areas-guides-cards">
+                <div class="area-card">
+                    <img src="assets/benamlida.jpg" alt="Benalmadena" class="area-card-image">
+                    <div class="area-card-label">Benalmadena</div>
+                </div>
+                <div class="area-card">
+                    <img src="assets/sotogrande.png" alt="Sotogrande" class="area-card-image">
+                    <div class="area-card-label">Sotogrande</div>
+                </div>
+                <div class="area-card">
+                    <img src="assets/marbella.jpg" alt="Marbella" class="area-card-image">
+                    <div class="area-card-label">Marbella</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Property Listings -->
-    <section class="property-listings">
-        <div class="container">
-            <h2>Featured Properties</h2>
-            <div class="properties-grid">
-                <div class="property-image"></div>
-                <div class="property-image"></div>
-                <div class="property-image"></div>
-                <div class="property-image"></div>
+    <!-- ========== EVERYTHING YOU NEED TO KNOW SECTION ========== -->
+    <section class="everything-section">
+        <div class="everything-container">
+            <h2 class="everything-title">
+                <span class="everything-title-bold">Everything</span><br>
+                <span class="everything-title-light">You Need to Know</span>
+            </h2>
+            <div class="everything-divider"></div>
+            <div class="everything-cards">
+                <div class="everything-card-image">
+                    <img src="assets/Buying.jpg" alt="Buying Guide" class="everything-image">
+                    <div class="everything-image-label">BUYING GUIDE</div>
+                </div>
+                <div class="everything-card-text">
+                    <h3 class="everything-card-title">BUYING GUIDE</h3>
+                    <p class="everything-card-description">Lorem ipsum dolor sit amet consectetur. Pellentesque lectus ac tempus commodo tortor ultrices. Morbi in curabitur eget pretium mattis ultricies in. Venenatis ac morbi purus.</p>
+                    <button class="everything-card-button">FIND OUT MORE</button>
+                </div>
+                <div class="everything-card-image">
+                    <img src="assets/Selling.jpg" alt="Selling Guide" class="everything-image">
+                    <div class="everything-image-label">SELLING GUIDE</div>
+                </div>
+                <div class="everything-card-image">
+                    <img src="assets/legal.jpg" alt="Legal Guide" class="everything-image">
+                    <div class="everything-image-label">LEGAL GUIDE</div>
+            </div>
             </div>
         </div>
     </section>
 
-    <!-- Get in Touch -->
+    <!-- ========== NEWS REAL ESTATE BLOG SECTION ========== -->
+    <section class="news-blog">
+        <div class="news-blog-container">
+            <div class="news-blog-header">
+                <div class="news-blog-title-section">
+                    <h2 class="news-blog-title">
+                        <span class="news-blog-title-bold">News</span>
+                        <span class="news-blog-title-light">Real Estate Blog</span>
+                    </h2>
+                    <div class="news-blog-divider"></div>
+                </div>
+            </div>
+            <div class="news-blog-filters">
+                <button class="news-blog-filter active" data-filter="all">All</button>
+                <button class="news-blog-filter" data-filter="news">News</button>
+                <button class="news-blog-filter" data-filter="tips">Tips And Topics</button>
+            </div>
+            <div class="news-blog-cards">
+                <div class="news-blog-card">
+                    <img src="assets/building1.png" alt="Best Family Friendly Areas" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">Best Family Friendly Areas</h3>
+                        <p class="news-blog-card-date">March 4, 2016</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+                <div class="news-blog-card">
+                    <img src="assets/building2.png" alt="The Top Neighborhoods" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">The Top Neighborhoods</h3>
+                        <p class="news-blog-card-date">May 28, 2014</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+                <div class="news-blog-card">
+                    <img src="assets/building3.png" alt="Buyer's Guide" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">Buyer's Guide</h3>
+                        <p class="news-blog-card-date">May 27, 2014</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+                <div class="news-blog-card">
+                    <img src="assets/building1.png" alt="Best Family Friendly Areas" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">Best Family Friendly Areas</h3>
+                        <p class="news-blog-card-date">March 4, 2016</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+                <div class="news-blog-card">
+                    <img src="assets/building2.png" alt="The Top Neighborhoods" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">The Top Neighborhoods</h3>
+                        <p class="news-blog-card-date">May 28, 2014</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+                <div class="news-blog-card">
+                    <img src="assets/building3.png" alt="Buyer's Guide" class="news-blog-card-image">
+                    <div class="news-blog-card-content">
+                        <h3 class="news-blog-card-title">Buyer's Guide</h3>
+                        <p class="news-blog-card-date">May 27, 2014</p>
+                        <p class="news-blog-card-snippet">New York County as a whole covers a total area of 33.77 square miles (87.5 km2), of which 22.96 square...</p>
+                        <a href="#" class="news-blog-card-link">Continue reading <span>></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-blog-view-more">
+                <button class="news-blog-view-more-button">LOAD MORE <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GET IN TOUCH SECTION ========== -->
     <section class="get-in-touch">
-        <div class="container">
-            <h2>Get in touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit" class="btn-primary">Send</button>
+        <div class="get-in-touch-container">
+            <div class="get-in-touch-content">
+                <div class="get-in-touch-info">
+                    <h2 class="get-in-touch-title">
+                        <span class="get-in-touch-title-line1">Get in touch</span>
+                        <span class="get-in-touch-title-line2">with us</span>
+                    </h2>
+                    <p class="get-in-touch-text">Use the form to ask us a question and we will<br>get back to you as soon as we can.</p>
+                    <p class="get-in-touch-text get-in-touch-text-light">Alternatively you should use the information<br>below to contact us immediately.</p>
+                    <div class="get-in-touch-contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#4a0e7a"/>
+                                </svg>
+                            </div>
+                            <span class="contact-detail-text">+34 663 926 101</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#4a0e7a"/>
+                                </svg>
+                            </div>
+                            <span class="contact-detail-text">info@onepropertygroup.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-in-touch-form-wrapper">
+                    <form class="get-in-touch-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" class="form-input" placeholder="FIRST NAME" />
+                            </div>
+                            <div class="form-field">
+                                <input type="text" class="form-input" placeholder="SURNAME" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="email" class="form-input" placeholder="YOUR EMAIL ADDRESS" />
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" class="form-input" placeholder="CONTACT NUMBER" />
+                            </div>
+                        </div>
+                        <div class="form-field form-field-full">
+                            <textarea class="form-textarea" placeholder="YOUR MESSAGE"></textarea>
+                        </div>
+                        <div class="form-footer">
+                            <p class="form-disclaimer">By completing this form, you agree to One Property Terms & Conditions and Privacy Policy. Data may also be used to send relevant property news and marketing tips.</p>
+                            <button type="submit" class="form-submit-button">SEND</button>
+                        </div>
             </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ========== FOOTER SECTION ========== -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 ONE Property Group. All rights reserved.</p>
+        <div class="footer-main">
+            <div class="footer-container">
+                <!-- Company Information Column -->
+                <div class="footer-column footer-company">
+                    <div class="footer-logo">
+                        <svg width="182" height="30" viewBox="0 0 182 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
+                            <path d="M14.9995 29.9989C12.0329 29.9989 9.13287 29.1192 6.66622 27.4711C4.19957 25.8229 2.27705 23.4803 1.14177 20.7395C0.00649921 17.9987 -0.29054 14.9828 0.288217 12.0732C0.866975 9.16361 2.29554 6.49096 4.39325 4.39325C6.49096 2.29554 9.16361 0.866975 12.0732 0.288217C14.9828 -0.29054 17.9987 0.00649875 20.7395 1.14177C23.4803 2.27705 25.8229 4.19957 27.4711 6.66622C29.1192 9.13286 29.9989 12.0329 29.9989 14.9995C29.995 18.9764 28.4135 22.7893 25.6014 25.6014C22.7893 28.4135 18.9764 29.995 14.9995 29.9989ZM14.9995 3.28236C12.682 3.28236 10.4167 3.96956 8.48979 5.25705C6.56293 6.54454 5.06112 8.37451 4.17428 10.5155C3.28744 12.6566 3.0554 15.0125 3.5075 17.2854C3.95961 19.5583 5.07556 21.6461 6.71423 23.2847C8.35289 24.9234 10.4407 26.0393 12.7136 26.4914C14.9865 26.9435 17.3424 26.7115 19.4834 25.8247C21.6244 24.9378 23.4544 23.436 24.7419 21.5091C26.0294 19.5823 26.7166 17.3169 26.7166 14.9995C26.7195 13.46 26.4183 11.935 25.8305 10.5121C25.2427 9.08924 24.3797 7.79642 23.2911 6.70781C22.2025 5.6192 20.9097 4.75624 19.4868 4.16842C18.0639 3.5806 16.539 3.27949 14.9995 3.28236Z" fill="#6a1b9a"/>
+                            <path d="M92.9367 29.9992H62.957V0.0195312H92.9367V3.28263H66.2201V13.3781H78.1472V16.6412H66.2201V26.7201H92.9367V29.9992Z" fill="#6a1b9a"/>
+                            <path d="M60.5317 25.2859L35.264 0.0195312H31.9258V15.8015H35.264V4.73282L60.5317 29.9992V25.2859Z" fill="#6a1b9a"/>
+                            <path d="M104.312 4.50293H103.109V25.5137H104.312V4.50293Z" fill="#6a1b9a"/>
+                            <path d="M119.288 24.9992C119.575 25.0061 119.862 24.9934 120.147 24.9613C120.393 24.9388 120.635 24.8941 120.873 24.8278C121.087 24.763 121.297 24.6865 121.503 24.5986C121.712 24.503 121.903 24.4061 122.094 24.3123V21.8889H120.361C120.313 21.8945 120.265 21.8808 120.228 21.851C120.214 21.8397 120.203 21.8249 120.196 21.8082C120.19 21.7914 120.187 21.7732 120.19 21.7554V21.3927H122.671V24.5608C122.451 24.7145 122.221 24.8547 121.984 24.9806C121.741 25.1183 121.476 25.2151 121.201 25.2669C120.915 25.3552 120.621 25.4196 120.324 25.4595C119.976 25.4997 119.625 25.5188 119.274 25.5166C118.693 25.5348 118.114 25.4342 117.574 25.2209C117.033 25.0076 116.541 24.6862 116.129 24.2764C115.73 23.8732 115.429 23.3833 115.251 22.8448C115.038 22.2376 114.929 21.599 114.927 20.9555C114.913 20.3108 115.023 19.6694 115.251 19.0662C115.44 18.5328 115.739 18.0452 116.129 17.6353C116.523 17.2252 117.006 16.9117 117.541 16.7192C118.137 16.4896 118.772 16.3795 119.411 16.395C119.735 16.395 120.06 16.4329 120.365 16.4521C120.643 16.4939 120.918 16.5583 121.185 16.6447C121.428 16.7219 121.659 16.8309 121.872 16.9689C122.094 17.1042 122.305 17.2573 122.502 17.4266L122.331 17.7129C122.313 17.7424 122.287 17.7666 122.257 17.7834C122.227 17.8001 122.193 17.8088 122.159 17.8086C122.141 17.811 122.123 17.8088 122.106 17.8021C122.089 17.7955 122.074 17.7847 122.063 17.7707C121.971 17.7183 121.882 17.6609 121.796 17.5987C121.641 17.4868 121.474 17.3909 121.3 17.3124C121.05 17.1943 120.787 17.1047 120.517 17.0453C120.153 16.9669 119.783 16.9222 119.41 16.9118C118.875 16.9018 118.343 16.9992 117.845 17.1981C117.398 17.379 116.989 17.6447 116.643 17.9806C116.297 18.3417 116.042 18.7801 115.899 19.2594C115.719 19.7944 115.629 20.3553 115.632 20.9195C115.626 21.4967 115.716 22.0707 115.899 22.6182C116.066 23.0867 116.318 23.5203 116.643 23.897C116.962 24.2571 117.37 24.5269 117.826 24.6795C118.28 24.904 118.782 25.0138 119.288 24.9992Z" fill="#6a1b9a"/>
+                            <path d="M125.739 21.3546V25.4195H125.09V16.45H127.38C128.199 16.3885 129.017 16.5964 129.707 17.0419C129.969 17.2526 130.174 17.5252 130.304 17.8352C130.434 18.1451 130.485 18.4826 130.452 18.817C130.452 19.1427 130.393 19.4658 130.279 19.7709C130.155 20.0483 129.981 20.3005 129.766 20.5149C129.543 20.7375 129.276 20.9122 128.983 21.0285C128.649 21.171 128.295 21.2611 127.934 21.2956C128.036 21.3697 128.127 21.4599 128.201 21.5626L131.273 25.4144H130.72C130.66 25.4225 130.599 25.409 130.548 25.3765C130.51 25.3387 130.452 25.3194 130.414 25.243L127.533 21.6172C127.477 21.5315 127.397 21.4644 127.303 21.4246C127.175 21.378 127.039 21.3585 126.903 21.3675L125.739 21.3482V21.3546ZM125.739 20.8584H127.304C127.671 20.8646 128.037 20.8197 128.391 20.7249C128.679 20.6506 128.946 20.5138 129.174 20.3243C129.397 20.1585 129.569 19.9337 129.67 19.6753C129.78 19.4021 129.839 19.1108 129.842 18.8163C129.866 18.5468 129.821 18.2756 129.711 18.0285C129.6 17.7813 129.429 17.5664 129.213 17.404C128.662 17.0701 128.023 16.9106 127.38 16.9463H125.739V20.8584Z" fill="#6a1b9a"/>
+                            <path d="M140.586 20.9341C140.593 21.5751 140.497 22.2132 140.3 22.8234C140.119 23.3605 139.819 23.8498 139.422 24.2549C139.05 24.6547 138.594 24.9675 138.086 25.171C137.536 25.399 136.945 25.5094 136.35 25.4952C135.755 25.5076 135.164 25.3972 134.613 25.171C134.109 24.9631 133.653 24.6509 133.277 24.2549C132.904 23.832 132.608 23.3476 132.4 22.8234C132.187 22.2162 132.077 21.5775 132.076 20.9341C132.06 20.2955 132.17 19.6601 132.4 19.064C132.581 18.5271 132.881 18.038 133.277 17.6331C133.643 17.2251 134.101 16.9109 134.613 16.717C135.163 16.4891 135.755 16.3786 136.35 16.3928C136.945 16.3804 137.536 16.4908 138.086 16.717C138.591 16.9249 139.046 17.2371 139.422 17.6331C139.795 18.0558 140.092 18.54 140.3 19.064C140.5 19.6669 140.596 20.2991 140.586 20.9341ZM139.937 20.9341C139.945 20.3694 139.854 19.8077 139.67 19.2739C139.505 18.809 139.259 18.3768 138.944 17.9971C138.639 17.6382 138.244 17.3679 137.799 17.2145C137.331 17.029 136.832 16.9382 136.329 16.9475C135.827 16.9476 135.33 17.038 134.86 17.2145C134.435 17.4055 134.047 17.6705 133.715 17.9971C133.383 18.3678 133.131 18.8023 132.974 19.2739C132.793 19.8085 132.702 20.3696 132.707 20.9341C132.702 21.5111 132.793 22.0849 132.974 22.6327C133.133 23.1047 133.386 23.5397 133.718 23.9115C134.022 24.2703 134.418 24.5406 134.863 24.694C135.328 24.8864 135.829 24.9775 136.333 24.9611C136.835 24.9645 137.333 24.8739 137.802 24.694C138.232 24.5125 138.622 24.2464 138.947 23.9115C139.281 23.5442 139.529 23.1075 139.673 22.6327C139.851 22.0844 139.941 21.5108 139.937 20.9341Z" fill="#6a1b9a"/>
+                            <path d="M146.025 24.9241C146.419 24.9407 146.812 24.8621 147.17 24.6949C147.493 24.5406 147.785 24.327 148.029 24.0652C148.268 23.7824 148.456 23.4594 148.582 23.1112C148.717 22.7316 148.782 22.3308 148.775 21.9281V16.4502H149.424V21.9846C149.438 22.4531 149.36 22.9198 149.195 23.3584C149.03 23.7635 148.798 24.1377 148.508 24.4651C148.205 24.7911 147.834 25.0453 147.42 25.2091C146.974 25.3981 146.492 25.4891 146.008 25.4762C145.525 25.4779 145.045 25.3873 144.596 25.2091C144.187 25.0358 143.817 24.7829 143.508 24.4651C143.218 24.1378 142.985 23.7635 142.821 23.3584C142.655 22.9198 142.577 22.4531 142.591 21.9846V16.4502H143.24V21.9846C143.235 22.3872 143.3 22.7877 143.433 23.1677C143.546 23.5137 143.72 23.8368 143.947 24.1217C144.177 24.3991 144.472 24.6154 144.806 24.7514C145.202 24.866 145.612 24.9241 146.025 24.9241Z" fill="#6a1b9a"/>
+                            <path d="M152.837 21.7744V25.381H152.188V16.45H154.516C155.367 16.3914 156.212 16.6346 156.901 17.1369C157.168 17.3869 157.377 17.6927 157.512 18.0324C157.647 18.3722 157.706 18.7376 157.684 19.1026C157.687 19.4694 157.613 19.8328 157.465 20.1685C157.316 20.5041 157.098 20.8043 156.825 21.049C156.524 21.2929 156.181 21.4803 155.813 21.6024C155.381 21.7371 154.93 21.8021 154.477 21.795H152.836L152.837 21.7744ZM152.837 21.2609H154.499C154.856 21.2675 155.212 21.2092 155.548 21.0888C155.843 21.0035 156.112 20.8462 156.331 20.6311C156.555 20.4511 156.727 20.2138 156.827 19.9442C156.951 19.6755 157.01 19.3811 156.999 19.0852C157.019 18.7878 156.973 18.4897 156.864 18.2122C156.755 17.9347 156.586 17.6848 156.369 17.4803C155.826 17.0753 155.156 16.8789 154.48 16.927H152.838L152.837 21.2609Z" fill="#6a1b9a"/>
+                        </svg>
+                    </div>
+                    <p class="footer-description">We are New Development Specialists, we have done all the legwork for you by selecting the best new developments on the Costa del Sol, and we specialise in understanding your personal requirements, matching them to the ideal property for you.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="#6a1b9a"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" fill="#6a1b9a"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#6a1b9a"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Menu Column -->
+                <div class="footer-column footer-menu">
+                    <h3 class="footer-heading">Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Buy</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">Property collections</a></li>
+                        <li><a href="#">Guide & Blog</a></li>
+                        <li><a href="#">New Developments</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Locations Column -->
+                <div class="footer-column footer-locations">
+                    <h3 class="footer-heading">Locations</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Benalmadena</a></li>
+                        <li><a href="#">Estepona</a></li>
+                        <li><a href="#">Fuengirola</a></li>
+                        <li><a href="#">Malaga</a></li>
+                        <li><a href="#">Marbella</a></li>
+                        <li><a href="#">Marbella East</a></li>
+                        <li><a href="#">Marbella West</a></li>
+                        <li><a href="#">Mijas</a></li>
+                        <li><a href="#">Sotogrande</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-newsletter-heading">SIGN UP TO OUR<br>NEWSLETTER</h3>
+                    <form class="footer-newsletter-form">
+                        <input type="email" class="footer-email-input" placeholder="YOUR EMAIL ADDRESS" />
+                        <button type="submit" class="footer-send-button">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bar -->
+        <div class="footer-bar">
+            <div class="footer-bar-container">
+                <div class="footer-copyright">© Copyright One Property Group 2025.</div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="footer-legal-divider">|</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="footer-credits">Website Design by Property Webmasters</div>
+            </div>
         </div>
     </footer>
 </body>
 </html>
+
 
 
 
